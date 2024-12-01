@@ -24,11 +24,6 @@ jobs:
     - name: Display Go version
       run: go version
 
-    - name: Install dependancies
-      run: |
-        go get .
-        go get github.com/stretchr/testify/assert
-
     - name: Build
       run: go build -v ./...
 
